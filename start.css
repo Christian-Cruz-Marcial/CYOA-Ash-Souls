@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+div{
+    background: url(start.jpg) no-repeat;
+    height: 576px;
+}
+h1{
+    font-size: 80px;
+    position:absolute;
+    left: 500px;
+    padding:0 0 0 0;
+}
+p{
+    position: absolute;
+    top: 310px;
+    left:719px;
+}
