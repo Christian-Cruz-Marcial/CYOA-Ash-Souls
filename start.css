@@ -1,25 +1,359 @@
 body{
     background-color: black;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body#arena{
+    animation: 6s ease-in-out forwards;
+}
+@keyframes break {
+    10%{
+        rotate: 0deg;
+        color: white;
+    }
+    12%{
+        rotate: 1deg;
+        color:red
+    }
+    14%{
+        rotate: -1deg;
+    }
+    15% {
+        rotate: 2deg;
+    }
+    18%{
+        rotate: -2deg;
+    }
+    30%{
+        rotate: 0deg;
+    }
 }
 a{
     color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:20px;
+    text-decoration: none;
 }
-div{
-    background: url(start.jpg) no-repeat;
-    height: 576px;
+a:hover{
+    text-decoration: underline;
 }
 h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div#scene{
+    background: url(start.jpg) no-repeat;
+    height: 576px;
+    width: 1024px;
+    position:absolute;
+    left: 200px;
+    top:50px;
+}
+div#death{
+    background: url(death.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#c1{
+    background: url(choice1.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#c2{
+    background:url(cottage.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#key{
+    background: url(fire.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#inside{
+    background: url(tower.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#stairs{
+    background: url(stairs.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#arena{
+    background: url(arena.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+    animation: break 4s ease-in-out forwards;
+}
+div#ritual{
+    background: url(ritual.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#FE{
+    background: url(fakeEnd.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+div#RE{
+    background: url(realEnd.jpg) no-repeat;
+    background-size: 1024px, 1024px;
+    height: 1024px;
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+}
+h1#title{
     font-size: 80px;
     position:absolute;
     left: 500px;
     padding:0 0 0 0;
 }
-p{
+h1#death{
+    font-size: 120px;
     position: absolute;
-    top: 310px;
-    left:719px;
+    left:300px;
+    color:red;
+}
+h1#c1{
+    font-size: 70px;
+    position: absolute;
+    color:rgb(123, 150, 100);
+    
+}
+h1#c2{
+    font-size: 70px;
+    position: absolute;
+    left: 100px;
+}
+h1#inside{
+    font-size: 80px;
+    position: absolute;
+    left:100px;
+    background-color:rgba(0,0,0,0.5);
+    width: 800px;
+    text-align: center;
+}
+h1#stairs{
+    font-size: 40px;
+    position: absolute;
+    left:100px;
+    background-color:rgba(0,0,0,0.5);
+    width: 800px;
+    text-align: center;
+}
+h1#arena{
+    font-size: 80px;
+    position: absolute;
+    left:100px;
+    background-color:rgba(0,0,0,0.5);
+    width: 800px;
+    text-align: center;
+}
+h1#ritual{
+    font-size: 80px;
+    position: absolute;
+    left:100px;
+    background-color:rgba(0,0,0,0.5);
+    width: 800px;
+    text-align: center;
+}
+h1#FE{
+    font-size: 50px;
+    position: absolute;
+    left:100px;
+    background-color:rgba(0,0,0,0.5);
+    width: 800px;
+    text-align: center;
+    color:rgba(227, 17, 17, 0.5)
+}
+h1#RE{
+    font-size: 50px;
+    position: absolute;
+    left:100px;
+    background-color:rgba(0,0,0,0.5);
+    width: 800px;
+    text-align: center;
+    color:rgba(71, 56, 207, 0.5)
+}
+p#enter{
+    position: absolute;
+    top: 300px;
+    left:714px;
+}
+p#death{
+    position: absolute;
+    font-size:xx-large;
+    top: 250px;
+    left:450px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 150px;
+    animation: spin 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+p#cottage{
+    position: absolute;
+    background-color:rgba(202, 140, 25, 0.5);
+    width: 150px;
+    text-align: center;
+    padding: 0 0 0 0;   
+    top: 700px;
+    left: 350px;
+}
+p#tower{
+    position: absolute;
+    background-color:rgba(46, 202, 25, 0.5);
+    width: 150px;
+    text-align: center;
+    padding: 0 0 0 0; 
+    top:400px;
+    left: 600px;
+}
+p#forest{
+    position: absolute;
+    background-color:rgba(205, 55, 22, 0.616);
+    width: 150px;
+    text-align: center;
+    padding: 0 0 0 0; 
+    top:700px;
+    left: 50px;
+}
+p#woman{
+    position: absolute;
+    background-color:rgba(22, 205, 120, 0.616);
+    width: 150px;
+    text-align: center;
+    padding: 0 0 0 0; 
+    top: 450px;
+    left: 450px;
+}
+p#fireplace{
+    position: absolute;
+    background-color:rgba(205, 55, 22, 0.616);
+    width: 150px;
+    text-align: center;
+    padding: 0 0 0 0; 
+    top:600px;
+    left:20px;
+}
+p#key{
+    position: absolute;
+    background-color:rgba(205, 55, 22, 0.616);
+    width: 150px;
+    text-align: center;
+    padding: 0 0 0 0; 
+    top:800px;
+    left: 350px;
+}
+p#left{
+    font-size: 30px;
+    background-color:rgba(227, 17, 17, 0.5);
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    animation: 3s ease-in-out forwards;
+}
+p#right{
+    font-size: 30px;
+    background-color:rgba(17, 108, 227, 0.5);
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    top: 600px;
+    left: 700px;
+}
+p#sword{
+    font-size: 20px;
+    position: absolute;
+    left:413px;
+    top: 280px;
+    background-color:rgba(14, 235, 239, 0.5);
+    width: 200px;
+    text-align: center;
+}
+p#girl{
+    font-size: 20px;
+    position: absolute;
+    background-color: rgba(17, 108, 227, 0.5);
+    width: 200px;
+    text-align: center;
+    top: 650px;
+    left: 630px;
+}
+p#solo{
+    font-size: 20px;
+    position: absolute;
+    background-color: rgba(227, 17, 17, 0.5);
+    width: 200px;
+    text-align: center;
+    top: 450px;
+    left: 630px;
+}
+p#team{
+    font-size: 20px;
+    position: absolute;
+    background-color: rgba(17, 108, 227, 0.5);
+    width: 150px;
+    top: 600px;
+    left: 50px
+}
+p#head{
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(17, 227, 45, 0.5);   
+    width: 200px;
+    top: 650px;
+    left: 413px;
+}
+p#book{
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(227, 17, 17, 0.5);   
+    width: 200px;
+    top: 480px;
+    left: 413px;   
 }
